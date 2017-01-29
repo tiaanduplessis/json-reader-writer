@@ -54,4 +54,3 @@ module.exports.readJSON = function (filename = 'file.json') {
   }
 }
 
-
