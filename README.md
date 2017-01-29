@@ -40,6 +40,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/json-reader-writer.svg)](https://greenkeeper.io/)
+
 ```sh
 $ npm install --save json-reader-writer
 ```
