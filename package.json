@@ -1,0 +1,46 @@
+{
+  "name": "json-reader-writer",
+  "version": "1.0.0",
+  "description": "Simple module to read or write to a JSON file synchronously",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiaanduplessis/json-reader-writer.git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/json-reader-writer",
+  "bugs": "https://github.com/tiaanduplessis/json-reader-writer/issues",
+  "author": {
+    "name": "Tiaan",
+    "email": "tiaanduplessis@hotmail.com",
+    "url": "tiaanduplessis.co.za"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npm test -- -w",
+    "lint": "standard --verbose",
+    "lint:fix": "standard --fix --verbose",
+    "pretest": "npm run lint:fix",
+    "test": "mocha"
+  },
+  "keywords": [
+    "fs,",
+    "JSON,",
+    "reader,",
+    "writer,",
+    "read,",
+    "write,",
+    "file",
+    "json-reader-writer"
+  ],
+  "dependencies": {
+    "graceful-fs": "^4.1.11"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "del": "^2.2.2",
+    "mocha": "^3.2.0",
+    "standard": "^8.6.0",
+    "temp": "^0.8.3"
+  }
+}
