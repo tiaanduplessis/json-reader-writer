@@ -23,7 +23,7 @@ const isValidObj = (obj) => {
 /**
  * Write to a JSON file sync
  */
-function writeJson (filename = 'file.json', obj = {}) {
+module.exports.writeJSON = function (filename = 'file.json', obj = {}) {
   isValidExt(filename)
   isValidObj(obj)
 
@@ -39,7 +39,7 @@ function writeJson (filename = 'file.json', obj = {}) {
 /**
  * Read from a JSON file sync & parse the JSON
  */
-function readJSON (filename = 'file.json') {
+module.exports.readJSON = function (filename = 'file.json') {
   isValidExt(filename)
 
   if (fs.existsSync(filename)) {
@@ -54,6 +54,4 @@ function readJSON (filename = 'file.json') {
   }
 }
 
-module.exports = {
-  writeJson,
-  readJSON}
+
