@@ -1,6 +1,6 @@
 {
   "name": "json-reader-writer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Read or write to a JSON file synchronously",
   "license": "MIT",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/tiaanduplessis/json-reader-writer",
   "bugs": "https://github.com/tiaanduplessis/json-reader-writer/issues",
-  "author": "Tiaan du Plessis <tiaanduplessis@hotmail.com" ,
+  "author": "Tiaan du Plessis <tiaanduplessis@hotmail.com",
   "scripts": {
     "start": "npm run dev",
     "dev": "npm test -- -w",
