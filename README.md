@@ -1,6 +1,6 @@
 <h1 align="center">📘 json-reader-writer ✍️</h1>
 <div align="center">
-  <strong>Simple module to read or write to a JSON file synchronously</strong>
+  <strong>Read or write to a JSON file synchronously</strong>
 </div>
 <br>
 <div align="center">
@@ -24,9 +24,6 @@
    </a>
 </div>
 <br>
-<div align="center">
-  Built with ❤︎ by <a href="tiaanduplessis.co.za">Tiaan du Plessis</a> and <a href="https://github.com/tiaanduplessis/json-reader-writer/graphs/contributors">contributors</a>
-</div>
 
 <h2>Table of Contents</h2>
 <details>

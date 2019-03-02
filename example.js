@@ -1,5 +1,5 @@
 const del = require('del')
-const {readJSON, writeJson} = require('./index')
+const { readJSON, writeJson } = require('./index')
 const filePath = 'foo.json'
 const obj = {
   foo: 1,

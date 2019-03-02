@@ -53,4 +53,3 @@ module.exports.readJSON = function (filename = 'file.json') {
     throw new Error('The file does not exist')
   }
 }
-
