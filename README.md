@@ -37,6 +37,8 @@
 
 ## Install
 
+Note that this module Uses JSON.stringify, which can [run out of memory](https://github.com/nodejs/node/issues/13465). If the data you need to write is large, consider using a streaming JSON writer, such as @mbostock's [json-write](https://www.npmjs.com/package/json-write). Otherwise, go ahead and...
+
 ```sh
 $ npm install --save json-reader-writer
 ```
