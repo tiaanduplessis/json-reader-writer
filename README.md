@@ -50,7 +50,7 @@ $ yarn add json-reader-writer
 ## Usage
 
 ```js
-const {readJSON, writeJson} = require('json-reader-writer')
+const {readJSON, writeJSON} = require('json-reader-writer')
 const filePath = 'foo.json'
 const obj = {
   foo: 1,
@@ -58,7 +58,7 @@ const obj = {
   baz: 2
 }
 
-console.log(writeJson(filePath, obj)) // true if successful
+console.log(writeJSON(filePath, obj)) // true if successful
 console.log(readJSON(filePath)) // { foo: 1, bar: 2, baz: 2 }
 
 ```
@@ -69,9 +69,16 @@ console.log(readJSON(filePath)) // { foo: 1, bar: 2, baz: 2 }
 
 Takes the filename of the JSON file you want to read from as argument. Defaults to `file.json` if  no `filename` provided.
 
-### writeJSON(filename, objectToWrite)
+### writeJSON(filename, objectToWrite, space)
 
 Takes the filename of the JSON file you want to write to and the valid object you want to write as arguments.
+
+The optional third argument, `space`, controls pretty printing using the same behavior as `JSON.stringify`: pass a number for that many spaces per indentation level, or a string such as `\t` for custom indentation. Numbers are capped at 10 spaces and strings at their first 10 characters. Omit `space` to keep the compact output.
+
+```js
+writeJSON('foo.json', { foo: 1, bar: { baz: 2 } }, 2) // Indent with two spaces
+writeJSON('foo.json', { foo: 1, bar: { baz: 2 } }, '\t') // Indent with tabs
+```
 
 
 ## Contribute
