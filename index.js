@@ -23,12 +23,12 @@ const isValidObj = (obj) => {
 /**
  * Write to a JSON file sync
  */
-module.exports.writeJSON = function (filename = 'file.json', obj = {}) {
+module.exports.writeJSON = function (filename = 'file.json', obj = {}, space) {
   isValidExt(filename)
   isValidObj(obj)
 
   try {
-    const data = JSON.stringify(obj)
+    const data = JSON.stringify(obj, null, space)
     fs.writeFileSync(filename, data)
     return true
   } catch (e) {
